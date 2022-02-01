@@ -12,3 +12,7 @@ void Point::add(double _x, double _y) {
     x += _x;
     y += _y;
 }
+
+double Point::distance(Point &point) const {
+    return macro_distance(x,y,point.x,point.y); //macros used
+}

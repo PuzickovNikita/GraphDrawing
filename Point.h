@@ -5,6 +5,7 @@
 #ifndef GRAPHDRAWING_POINT_H
 #define GRAPHDRAWING_POINT_H
 
+#define macro_distance(ax,ay,bx,by) sqrt((bx-ax)*(bx-ax)+(by-ay)*(by-ay))
 
 #include <string>
 #include <utility>
@@ -19,6 +20,8 @@ public:
     void add(double _x, double _y);
 
     const std::string& getName() const;
+
+    double distance(Point& point) const;
 };
 
 
